@@ -1,0 +1,27 @@
+                   
+.moving-button {
+    position: relative;
+    animation: moveButton 0.5s ease-in-out infinite alternate, zoomButton 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveButton {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px);
+        /* Cambia el valor para ajustar el movimiento */
+    }
+}
+
+@keyframes zoomButton {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* Cambia el valor para ajustar el zoom */
+    }
+}
